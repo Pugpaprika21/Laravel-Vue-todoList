@@ -34,6 +34,6 @@ Route::prefix('/items')->group(function () {
 Route::controller(ItemController::class)->group(function () {
     Route::post('/store', 'store');
     Route::put('/update/{id}', 'update');
-    Route::delete('/store/{id}', 'destroy');
+    Route::delete('/destroy/{id}', 'destroy');
 });
 
