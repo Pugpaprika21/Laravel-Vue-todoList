@@ -31,3 +31,9 @@ Route::prefix('/items')->group(function () {
     Route::delete('/{id}', [ItemController::class, 'destroy']); // http://127.0.0.1:8000/api/items/10
 });
 
+Route::controller(ItemController::class)->group(function () {
+    Route::post('/store', 'store');
+    Route::put('/update/{id}', 'update');
+    Route::delete('/store/{id}', 'destroy');
+});
+
