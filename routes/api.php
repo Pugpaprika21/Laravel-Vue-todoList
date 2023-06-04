@@ -22,7 +22,7 @@ Route::prefix('/items')->group(function () {
 
 Route::prefix('/items')->group(function () {
     Route::controller(ItemController::class)->group(function () {
-        Route::post('/items', 'index');
+        Route::get('/items', 'index');
         Route::post('/store', 'store');
         Route::put('/update/{id}', 'update');
         Route::delete('/destroy/{id}', 'destroy');
