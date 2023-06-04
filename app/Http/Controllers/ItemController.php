@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Item;
 use Illuminate\Http\Request;
 use Illuminate\Support\Carbon;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 
 class ItemController extends Controller
 {
@@ -41,7 +43,6 @@ class ItemController extends Controller
      */
     public function show(string $id)
     {
-        
     }
 
     /**
@@ -49,7 +50,7 @@ class ItemController extends Controller
      */
     public function edit(string $id)
     {
-        //
+      
     }
 
     /**
